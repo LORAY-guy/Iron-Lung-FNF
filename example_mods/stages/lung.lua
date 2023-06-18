@@ -138,13 +138,6 @@ function onSongStart()
 end
 
 function onUpdatePost(elapsed)
-	for i = 1, #quarterSong do
-		if curStep == quarterSong[i] then
-			switchOxygenState(i)
-			break
-		end
-	end
-
 	for j = 4, #hudMap do
 		local sprite = hudMap[j]
 		local isMouseOverlapping = mouseOverLapsSprite(sprite)
@@ -219,15 +212,11 @@ end
 
 function printImportant(num)
 	debugPrint('important'..num)
+	loadGraphic('mark'..num, 'lung/check')
 end
 
 function printRandom()
 	debugPrint('nope')
-end
-
-function switchOxygenState(num) -- created this because playSound on Update is not a good idea, even if it's depending on the curStep
-	loadGraphic('curoxygen', 'lung/oxygen'..num+1)
-	playSound('oxygen', 0.25, 'oxygen') --took from the original game's resources
 end
 
 function onUpdate(elapsed)
@@ -261,7 +250,14 @@ function onStepHit()
 	end
 
 	if curStep == 512 then
-		doTweenY('boatstarts', 'ship', 656, 2, 'sineIn')
+		doTweenY('boatstarts', 'ship', 656, 2, 'sineInOut')
+	end
+
+	for i = 1, #quarterSong do
+		if curStep == quarterSong[i] then
+			loadGraphic('curoxygen', 'lung/oxygen'..i+1)
+			playSound('oxygen', 0.25, 'oxygen') --took from the original game's resources
+		end
 	end
 end
 
@@ -274,6 +270,7 @@ function onTweenCompleted(tag, loops, loopsLeft)
 		removeLuaSprite('blackoverlay', true)
 	end
 
+	--boat movements
 	if tag == 'boatstarts' then
 		doTweenY('boatgoesrightup', 'ship', 647.5, 2, 'sineInOut')
 		doTweenX('boatgoesright', 'ship', 63, 2, 'sineInOut')
@@ -286,6 +283,11 @@ function onTweenCompleted(tag, loops, loopsLeft)
 		doTweenAngle('boatgoingtothatmarker1angle', 'ship', 25, 2, 'sineInOut')
 	elseif tag == 'boatgoingtothatmarker1angle' then
 		doTweenAngle('boatrotatingagain', 'ship', -79, 2, 'sineInOut')
+	elseif tag == 'boatrotatingagain' then
+		doTweenX('boatgoingupandright', 'ship', 118, 2, 'sineInOut')
+		doTweenY('boatgoingrightandup', 'ship', 609, 2, 'sineInOut')
+	elseif tag == 'boatgoingupandright' then
+		doTweenAngle('boatrotatingagain2', 'ship', 13, 2, 'sineInOut')
 	end
 end
 
