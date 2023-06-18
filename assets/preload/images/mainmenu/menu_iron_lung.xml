@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_iron_lung.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="iron_lung basic0000" x="10" y="10" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0001" x="10" y="10" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0002" x="10" y="10" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0003" x="10" y="168" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0004" x="10" y="168" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0005" x="10" y="168" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0006" x="10" y="326" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0007" x="10" y="326" width="801" height="148"/>
+	<SubTexture name="iron_lung basic0008" x="10" y="326" width="801" height="148"/>
+	<SubTexture name="iron_lung white0000" x="10" y="484" width="804" height="151"/>
+	<SubTexture name="iron_lung white0001" x="10" y="645" width="804" height="151"/>
+	<SubTexture name="iron_lung white0002" x="10" y="806" width="804" height="151"/>
+</TextureAtlas>

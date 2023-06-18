@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="peppino_tv.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Idle0000" x="0" y="0" width="278" height="268"/>
+	<SubTexture name="Idle0001" x="278" y="0" width="278" height="268"/>
+	<SubTexture name="Idle0002" x="556" y="0" width="278" height="268"/>
+	<SubTexture name="Idle0003" x="0" y="268" width="278" height="268"/>
+	<SubTexture name="Idle0004" x="278" y="268" width="278" height="268"/>
+	<SubTexture name="Idle0005" x="556" y="268" width="278" height="268"/>
+	<SubTexture name="Idle0006" x="0" y="536" width="278" height="268"/>
+	<SubTexture name="Idle0007" x="278" y="268" width="278" height="268"/>
+	<SubTexture name="Idle0008" x="0" y="268" width="278" height="268"/>
+	<SubTexture name="Idle0009" x="556" y="0" width="278" height="268"/>
+</TextureAtlas>
