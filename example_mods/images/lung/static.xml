@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="static.png">
+<SubTexture name="vhs0000" x="0" y="0" width="282" height="234" frameX="-89" frameY="-149" frameWidth="550" frameHeight="550" />
+<SubTexture name="vhs0001" x="282" y="0" width="282" height="234" frameX="-89" frameY="-149" frameWidth="550" frameHeight="550" />
+<SubTexture name="vhs0002" x="0" y="234" width="282" height="234" frameX="-89" frameY="-149" frameWidth="550" frameHeight="550" />
+</TextureAtlas>

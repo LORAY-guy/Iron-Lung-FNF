@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="monitor.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Blackscreen0000" x="0" y="0" width="550" height="550"/>
+	<SubTexture name="Important0000" x="550" y="0" width="550" height="551"/>
+	<SubTexture name="Important0001" x="1100" y="0" width="550" height="551"/>
+	<SubTexture name="Important0002" x="1650" y="0" width="550" height="551"/>
+	<SubTexture name="Important0003" x="2200" y="0" width="550" height="551"/>
+	<SubTexture name="Important0004" x="2750" y="0" width="550" height="551"/>
+	<SubTexture name="Important0005" x="3300" y="0" width="550" height="551"/>
+	<SubTexture name="Random0000" x="0" y="551" width="550" height="550"/>
+	<SubTexture name="Random0001" x="550" y="551" width="550" height="550"/>
+	<SubTexture name="Random0002" x="1100" y="551" width="550" height="550"/>
+	<SubTexture name="Random0003" x="1650" y="551" width="550" height="550"/>
+	<SubTexture name="Random0004" x="2200" y="551" width="550" height="550"/>
+	<SubTexture name="Random0005" x="2750" y="551" width="550" height="550"/>
+</TextureAtlas>
